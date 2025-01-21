@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 150px;
+}
+
+.resume-container {
+    display:flex;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+{/* left section*/}
+ .left-section {
+    background-color: #CA7373;
+    color: white;
+    padding:  20px;
+    width: 38%;
+    text-align:  center;
+    border-right: 2px solid red;
+ }
+
+
+ .profile-picture {
+    width:  150px;
+    height: 150px;
+    margin-top:  10%;
+    border-radius:  50%;
+    border: 2px solid red;
+    margin-bottom:  20px;
+ }
+
+ h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+ }
+
+ h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+ }
+
+ ul {
+    list-style-type: fill round;
+    padding: 10px;
+    margin: 10px 0
+ }
+
+ ul li {
+    margin: 5px 0;
+ }
+
+ /* right section styling*/
+.right-section {
+    padding: 20px;
+    width: 55%;
+    background-color: #FFEEAD;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 12px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+    width: 150px;
+    height: 35px;
+}
+
+button:hover {
+    background-color: #ff737c;
+}
+
+
+/* Media query for tablets (768px and up) */
+@media (max-width: 768px) {
+   .resume-container {
+     width: 90%;
+     flex-direction: column;
+     padding: 10px;
+   }
+ 
+   .left-section,
+   .right-section {
+     width: 100%;
+     border-right: none;
+   }
+ 
+   .profile-picture {
+     width: 120px;
+     height: 120px;
+   }
+ 
+   h1 {
+     font-size: 20px;
+   }
+ 
+   h3 {
+     font-size: 16px;
+   }
+ 
+   button {
+     width: 100%;
+     height: auto;
+     padding: 10px;
+   }
+ }
+ 
+ /* Media query for mobile devices (480px and up) */
+ @media (max-width: 480px) {
+   body {
+     padding: 20px;
+   }
+ 
+   .resume-container {
+     width: 100%;
+     flex-direction: column;
+   }
+ 
+   .left-section,
+   .right-section {
+     width: 100%;
+     padding: 15px;
+   }
+ 
+   .profile-picture {
+     width: 100px;
+     height: 100px;
+   }
+ 
+   h1 {
+     font-size: 18px;
+   }
+ 
+   h3 {
+     font-size: 14px;
+   }
+ 
+   button {
+     width: 100%;
+     padding: 8px;
+   }
+ }
+ 
